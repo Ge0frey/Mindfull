@@ -1,5 +1,3 @@
-const { Cookie } = require('express-session');
-
 require('dotenv').config();
 
 const sessionConfig = {
