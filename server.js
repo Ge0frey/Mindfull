@@ -1,14 +1,18 @@
 const express = require('express');
 const dotenv = require('dotenv');
-dotenv.config();
-const db = require('./Backend/config/database')
+const bodyParser = require('body-parser')
+const cors = require('cors'); 
+const db = require('./Backend/config/database');
+const session = require('express-session');
+const sessionConfig = require('./Backend/config/session');
 const app = express();
+dotenv.config();
 
-app.get("/", (req,res) => {
-    res.send("Hello from the server")
-})
-
-
+//middleware 
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(session(sessionConfig));
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
