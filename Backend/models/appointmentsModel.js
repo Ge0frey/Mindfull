@@ -7,6 +7,23 @@ class Appointment {
         )
     }
 
+    static async findByUserId(userId) {
+      const [rows] = await db.promise().query(
+        `SELECT 
+            a.id, 
+            DATE_FORMAT(a.appointment_date, '%Y-%m-%d') as date,
+            a.appointment_time as time,
+            CONCAT(t.first_name, ' ', t.last_name) as therapist_name,
+            d.specialization
+        FROM appointments a
+        JOIN therapists t ON a.therapist_id = t.id
+        WHERE a.user_id = ?
+        ORDER BY a.appointment_date, a.appointment_time`,
+        [userId]
+      );
+      return rows;
+    }
+
     static async update(id, userId, { date, time }) {
         const [result] = await db.promise().query(
           'UPDATE appointments SET appointment_date = ?, appointment_time = ? WHERE id = ? AND user_id = ?',
