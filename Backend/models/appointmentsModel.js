@@ -39,6 +39,19 @@ class Appointment {
         );
         return result.affectedRows > 0;
       }
+
+      static async findById(id) {
+        const [rows] = await db.promise().query(
+          'SELECT a.id, a.appointment_date as date, a.appointment_time as time, ' +
+          'a.user_id, a.user_id, a.status, a.created_at, a.updated_at, ' +
+          'CONCAT(t.first_name, " ", t.last_name) as therapist_name, t.specialization ' +
+          'FROM appointments a ' +
+          'JOIN therapists t ON a.therapist_id = t.id ' +
+          'WHERE a.id = ?',
+          [id]
+        );
+        return rows[0];
+      }
 }
 
 module.exports = Appointment;
