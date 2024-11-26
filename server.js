@@ -6,6 +6,8 @@ const db = require('./Backend/config/database');
 const session = require('express-session');
 const sessionConfig = require('./Backend/config/session');
 const app = express();
+
+const authRoutes = require("./Backend/routes/authRoutes");
 dotenv.config();
 
 //middleware 
@@ -13,6 +15,15 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session(sessionConfig));
+
+//routes
+app.use('/api/auth', authRoutes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something went wrong!');
+});
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
