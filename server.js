@@ -9,6 +9,7 @@ const app = express();
 
 const authRoutes = require("./Backend/routes/authRoutes");
 const appoinmentsRoutes = require('./Backend/routes/appointmentRoutes');
+const therapistsRoutes = require('./Backend/routes/therapistRoutes');
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(session(sessionConfig));
 //routes
 app.use('/api/auth', authRoutes);
 app.use('/api/appointments', appoinmentsRoutes);
+app.use('/api/doctors', therapistsRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
