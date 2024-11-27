@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser')
 const cors = require('cors'); 
+const path = require('path');
 const db = require('./Backend/config/database');
 const session = require('express-session');
 const sessionConfig = require('./Backend/config/session');
@@ -18,6 +19,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session(sessionConfig));
+
+app.use(express.static(path.join(__dirname, 'Frontend')));
+app.get(/^(?!\/api).*/, (req, res) => {
+    res.sendFile(path.join(__dirname, 'Frontend', 'index.html'));
+});
 
 //routes
 app.use('/api/auth', authRoutes);
