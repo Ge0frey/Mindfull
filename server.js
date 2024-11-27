@@ -28,7 +28,7 @@ app.get(/^(?!\/api).*/, (req, res) => {
 //routes
 app.use('/api/auth', authRoutes);
 app.use('/api/appointments', appoinmentsRoutes);
-app.use('/api/doctors', therapistsRoutes);
+app.use('/api/therapists', therapistsRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
