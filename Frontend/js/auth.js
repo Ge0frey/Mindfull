@@ -56,3 +56,7 @@ export function getCurrentUser() {
 export function isLoggedIn() {
     return !!getCurrentUser();
 }
+
+export function initAuth() {
+    // Any initialization logic for auth
+}
