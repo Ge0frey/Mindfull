@@ -20,7 +20,7 @@ const app = {
     initModules() {
         initAuth();
         initAppointments();
-        initTherapistss();
+        initTherapists();
     },
 
     handleNavigation() {
