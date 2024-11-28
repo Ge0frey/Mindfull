@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    background-color: var(--header-bg);
+    background-color: #E0F7FA; /* Light pastel blue for header */
     color: var(--text-color);
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -41,13 +41,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
 }
 
 header nav ul {
@@ -65,12 +58,12 @@ header nav a {
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 header nav a:hover {
-    color: var(--primary-color);
-    background-color: rgba(52, 152, 219, 0.1);
+    color: var(--white); /* Change text color on hover */
+    background-color: var(--primary-color); /* Use primary color for background on hover */
 }
 
 #logout-btn {
@@ -108,7 +101,9 @@ header .logo {
     float: left;
     font-size: 25px;
     font-weight: bold;
-    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease; 
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -126,7 +121,7 @@ header nav li {
 }
 
 header a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .btn {
@@ -905,7 +900,7 @@ textarea {
 
 /* Footer styles */
 footer {
-    background-color: var(--header-bg);
+    background-color: #F1F8E9; /* Light pastel green for footer */
     padding: 20px 0;
     text-align: center;
 }
