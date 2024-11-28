@@ -103,4 +103,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries or feedback, please reach out to [your-email@example.com](ge0freydev@gmail.com).
+For any inquiries or feedback, please reach out to [your-email@example.com](mailto:ge0freydev@gmail.com).
