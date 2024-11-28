@@ -4,7 +4,8 @@ class Appointment {
     static async create (userId, therapistId, date, time) {
         const [result] = await db.promise().query(
             'INSERT INTO appointments (user_id, therapist_id, appointment_date, appointment_time) VALUES (?, ?, ?, ?)',[userId, therapistId, date, time]
-        )
+        );
+        return result.insertId;
     }
 
     static async findByUserId(userId) {
@@ -14,7 +15,7 @@ class Appointment {
             DATE_FORMAT(a.appointment_date, '%Y-%m-%d') as date,
             a.appointment_time as time,
             CONCAT(t.first_name, ' ', t.last_name) as therapist_name,
-            d.specialization
+            t.specialization
         FROM appointments a
         JOIN therapists t ON a.therapist_id = t.id
         WHERE a.user_id = ?
