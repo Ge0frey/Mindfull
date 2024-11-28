@@ -42,7 +42,7 @@ export async function renderDashboard() {
         mainContent.innerHTML = `
             <div class="dashboard-container">
                 <div class="card welcome-card">
-                    <h2>Welcome, ${user.firstName} ${user.lastName}!</h2>
+                    <h2>Welcome, ${user.firstName}!</h2>
                 </div>
                 
                 <div class="card appointments-card">
