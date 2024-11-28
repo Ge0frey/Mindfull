@@ -44,7 +44,6 @@ export function renderLogin() {
         e.preventDefault();
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
-        console.log('Logging in with:', { email, password });
         try {
             await login(email, password);
             window.location.hash = 'dashboard';
