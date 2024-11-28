@@ -40,7 +40,7 @@ const app = {
                     <div class="hero-section">
                         <div class="hero-content">
                             <h1>Welcome to Mindful</h1>
-                            <p class="hero-subtitle">Your Health is Our Priority</p>
+                            <p class="hero-subtitle">Your Mental Health is Our Priority</p>
                             <div class="hero-buttons">
                                 <a href="#therapists" class="btn btn-primary">Find a Therapist</a>
                                 ${!user ? `
@@ -57,12 +57,12 @@ const app = {
                                 <div class="feature-card">
                                     <i class="fas fa-user-md"></i>
                                     <h3>Expert Therapists</h3>
-                                    <p>Connect with qualified healthcare professionals</p>
+                                    <p>Connect with qualified psychotherapy professionals</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-clock"></i>
                                     <h3>24/7 Availability</h3>
-                                    <p>Access healthcare services anytime, anywhere</p>
+                                    <p>Access psychotherapy services anytime, anywhere</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-comments"></i>

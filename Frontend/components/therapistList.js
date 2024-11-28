@@ -14,7 +14,7 @@ export async function renderTherapistList() {
             <div class="therapists-container">
                 <div class="therapists-header">
                     <h2>Our Medical Experts</h2>
-                    <p>Connect with our experienced healthcare professionals for quality medical care</p>
+                    <p>Connect with our experienced mental healthcare professionals for quality psychotherapy </p>
                 </div>
                 
                 <div class="therapist-grid">
