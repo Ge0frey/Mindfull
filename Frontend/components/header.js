@@ -7,7 +7,7 @@ export function renderHeader() {
 
     header.innerHTML = `
         <div class="container">
-            <a href="#home" class="logo">TeleMed</a>
+            <a href="#home" class="logo">Mindfull</a>
             <button class="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>

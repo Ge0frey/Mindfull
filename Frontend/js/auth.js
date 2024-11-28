@@ -1,4 +1,5 @@
-import { api } from "./utils";
+import {api} from './utils.js';
+import { renderHeader } from '../components/header.js';
 
 export async function login (email, password) {
     try {
