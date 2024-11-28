@@ -28,7 +28,7 @@ export const api = {
     },
 
     post(url,data) {
-        return this.request(url, 'POST'. data);
+        return this.request(url, 'POST', data);
     },
 
     put(url) {
