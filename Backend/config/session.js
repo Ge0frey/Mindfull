@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const sessionConfig = {
-    secret: process.env.SESSIONS_SECRET,
+    secret: process.env.SESSION_SECRET,
     resave: false, 
     saveUninitialized: true,
     cookie: {

@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv');
+require('dotenv').config();
 const bodyParser = require('body-parser')
 const cors = require('cors'); 
 const path = require('path');
@@ -11,8 +11,6 @@ const app = express();
 const authRoutes = require("./Backend/routes/authRoutes");
 const appoinmentsRoutes = require('./Backend/routes/appointmentRoutes');
 const therapistsRoutes = require('./Backend/routes/therapistRoutes');
-
-dotenv.config();
 
 //middleware 
 app.use(cors());
