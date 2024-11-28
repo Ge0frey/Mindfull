@@ -39,7 +39,7 @@ const app = {
                 mainContent.innerHTML = `
                     <div class="hero-section">
                         <div class="hero-content">
-                            <h1>Welcome to Mindful</h1>
+                            <h1>Welcome to Mindfull</h1>
                             <p class="hero-subtitle">Your Mental Health is Our Priority</p>
                             <div class="hero-buttons">
                                 <a href="#therapists" class="btn btn-primary">Find a Therapist</a>
