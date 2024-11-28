@@ -104,7 +104,7 @@ export async function renderTherapistList() {
                     const therapistName = button.dataset.name;
                     const specialization = button.dataset.specialization;
                     
-                    document.getElementById('selectedtherapist').innerHTML = `
+                    document.getElementById('selectedTherapist').innerHTML = `
                         <strong>${therapistName}</strong><br>
                         <span class="specialization">${specialization}</span>
                     `;
