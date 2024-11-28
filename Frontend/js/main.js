@@ -1,7 +1,7 @@
 // frontend/js/main.js
 import { initAuth, getCurrentUser } from './auth.js';
 import { initAppointments } from './appointments.js';
-import {initTherapists} from './therapist.js';
+import { initTherapists } from './therapist.js';
 import { renderHeader } from '../components/header.js';
 import { renderFooter } from '../components/footer.js';
 
@@ -38,39 +38,34 @@ const app = {
             case 'home':
                 mainContent.innerHTML = `
                     <div class="hero-section">
-                        <div class="hero-content">
-                            <h1>Welcome to Mindfull</h1>
-                            <p class="hero-subtitle">Your Mental Health is Our Priority</p>
-                            <div class="hero-buttons">
-                                <a href="#therapists" class="btn btn-primary">Find a Therapist</a>
-                                ${!user ? `
-                                    <a href="#register" class="btn btn-secondary">Join Now</a>
-                                ` : ''}
-                            </div>
+                        <h1>Welcome to Mindfull - Your Path to Wellness</h1>
+                        <p class="hero-subtitle">Connecting you with expert therapists for your mental health journey.</p>
+                        <img src="https://via.placeholder.com/800x400?text=Peaceful+Landscape" alt="Peaceful Landscape" class="hero-image">
+                        <div class="hero-buttons">
+                            <a href="#therapists" class="btn btn-primary">Find a Therapist</a>
+                            ${!user ? `
+                                <a href="#register" class="btn btn-secondary">Book an Appointment</a>
+                            ` : ''}
                         </div>
                     </div>
 
-                    <div class="features-section">
-                        <div class="container">
-                            <h2>Why Choose Mindfull?</h2>
-                            <div class="features-grid">
-                                <div class="feature-card">
-                                    <i class="fas fa-user-md"></i>
-                                    <h3>Expert Therapists</h3>
-                                    <p>Connect with qualified psychotherapy professionals</p>
-                                </div>
-                                <div class="feature-card">
-                                    <i class="fas fa-clock"></i>
-                                    <h3>24/7 Availability</h3>
-                                    <p>Access psychotherapy services anytime, anywhere</p>
-                                </div>
-                                <div class="feature-card">
-                                    <i class="fas fa-comments"></i>
-                                    <h3>Easy Consultation</h3>
-                                    <p>Simple and convenient online appointments</p>
-                                </div>
-                            </div>
+                    <div class="storytelling-section">
+                        <h2>Our Approach to Mental Wellness</h2>
+                        <div class="storytelling-images">
+                            <img src="https://via.placeholder.com/300x200?text=Therapy+Session" alt="Therapy Session" class="story-image">
+                            <img src="https://via.placeholder.com/300x200?text=Personal+Growth" alt="Personal Growth" class="story-image">
+                            <img src="https://via.placeholder.com/300x200?text=Healing" alt="Healing" class="story-image">
                         </div>
+                        <p>At Mindfull, we believe in the power of therapy to transform lives. Our expert therapists are here to guide you on your journey to mental wellness.</p>
+                    </div>
+
+                    <div class="before-after-section">
+                        <h2>Before and After</h2>
+                        <div class="before-after-images">
+                            <img src="https://via.placeholder.com/300x200?text=Before" alt="Before Therapy" class="before-after-image">
+                            <img src="https://via.placeholder.com/300x200?text=After" alt="After Therapy" class="before-after-image">
+                        </div>
+                        <p>See how therapy can make a difference in your life. Our clients have experienced significant growth and healing through our services.</p>
                     </div>
                 `;
                 break;

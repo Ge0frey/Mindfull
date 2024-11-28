@@ -125,20 +125,19 @@ header a:hover {
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 24px; /* Increased padding for buttons */
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    font-size: 18px; /* Increased font size for buttons */
+    background: #6DD3C2; /* Soft green */
+    color: white;
+    padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
+    border: none; /* Ensure no border */
+    cursor: pointer; /* Change cursor to pointer */
     transition: background 0.3s ease;
+    display: inline-block; /* Ensure buttons are inline-block */
 }
 
 .btn:hover {
-    background: var(--hover-color);
+    background: #FF4F4F; /* Change color on hover */
 }
 
 .card {
@@ -459,6 +458,8 @@ textarea {
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
+    position: relative;
+    z-index: 10;
 }
 
 .btn-primary {
@@ -931,4 +932,118 @@ h3 {
 p {
     font-size: 1em; /* Standard paragraph size */
     line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, #6DD3C2, #FFB74D);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section .hero-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn {
+    background: #6DD3C2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #FF4F4F;
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Fixed width for feature cards */
+}
+
+/* Storytelling Section Styles */
+.storytelling-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.storytelling-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.storytelling-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-bottom: 20px;
+}
+
+.story-image {
+    width: 300px; /* Fixed width for storytelling images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Before and After Section Styles */
+.before-after-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.before-after-section h2 {
+    font-size: 2em; /* Section heading size */
+    margin-bottom: 20px;
+}
+
+.before-after-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-bottom: 20px;
+}
+
+.before-after-image {
+    width: 300px; /* Fixed width for before and after images */
+    height: auto; /* Maintain aspect ratio */
 }
