@@ -46,7 +46,7 @@ export async function register(firstName, lastName, email, phone, dateOfBirth, g
 }
 
 export function logout() {
-    localStorage.removeItem('used');
+    localStorage.removeItem('user');
     renderHeader();
 }
 
