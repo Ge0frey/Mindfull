@@ -1,4 +1,4 @@
-import { register } from "../js/auth";
+import { register } from "../js/auth.js";
 
 export function renderRegister() {
     const mainContent = document.getElementById("main-content");
