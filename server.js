@@ -3,14 +3,14 @@ require('dotenv').config();
 const bodyParser = require('body-parser')
 const cors = require('cors'); 
 const path = require('path');
-const db = require('./config/database');
+const db = require('./Backend/config/database');
 const session = require('express-session');
-const sessionConfig = require('./config/session');
+const sessionConfig = require('./Backend/config/session');
 const app = express();
 
-const authRoutes = require("./routes/authRoutes");
-const appoinmentsRoutes = require('./routes/appointmentRoutes');
-const therapistsRoutes = require('./routes/therapistRoutes');
+const authRoutes = require("./Backend/routes/authRoutes");
+const appoinmentsRoutes = require('./Backend/routes/appointmentRoutes');
+const therapistsRoutes = require('./Backend/routes/therapistRoutes');
 
 //middleware 
 app.use(cors());
