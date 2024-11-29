@@ -901,9 +901,20 @@ textarea {
 
 /* Footer styles */
 footer {
-    background-color: #F1F8E9; /* Light pastel green for footer */
+    background-color: #F1F8E9; /* Soft background color */
     padding: 20px 0;
     text-align: center;
+    color: #333; /* Darker text for readability */
+}
+
+footer a {
+    color: #333; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    color: #FF6F61; /* Change color on hover */
 }
 
 /* Typography for headings */
