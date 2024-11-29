@@ -40,7 +40,7 @@ const app = {
                     <div class="hero-section">
                         <h1>Welcome to Mindfull - Your Path to Wellness</h1>
                         <p class="hero-subtitle">Connecting you with expert therapists for your mental health journey.</p>
-                        <img src="https://www.freepik.com/free-ai-image/medium-shot-beautiful-woman-with-braids_180894059.htm#fromView=search&page=1&position=22&uuid=4ed9dc91-5c0c-4074-b9cd-ca3024a05b3f" alt="Peaceful Landscape" class="hero-image">
+                        <img src="../assets/images/landscape.png" alt="Peaceful Landscape" class="hero-image">
                         <div class="hero-buttons">
                             <a href="#therapists" class="btn btn-primary">Find a Therapist</a>
                             ${!user ? `
@@ -52,9 +52,9 @@ const app = {
                     <div class="storytelling-section">
                         <h2>Our Approach to Mental Wellness</h2>
                         <div class="storytelling-images">
-                            <img src="https://via.placeholder.com/300x200?text=Therapy+Session" alt="Therapy Session" class="story-image">
-                            <img src="https://via.placeholder.com/300x200?text=Personal+Growth" alt="Personal Growth" class="story-image">
-                            <img src="https://via.placeholder.com/300x200?text=Healing" alt="Healing" class="story-image">
+                            <img src="../assets/images/session-therapy.jpg" alt="Therapy Session" class="story-image">
+                            <img src="../assets/images/personal-growth.jpg" alt="Personal Growth" class="story-image">
+                            <img src="../assets/images/healing.jpg" alt="Healing" class="story-image">
                         </div>
                         <p>At Mindfull, we believe in the power of therapy to transform lives. Our expert therapists are here to guide you on your journey to mental wellness.</p>
                     </div>
@@ -62,8 +62,8 @@ const app = {
                     <div class="before-after-section">
                         <h2>Before and After</h2>
                         <div class="before-after-images">
-                            <img src="https://via.placeholder.com/300x200?text=Before" alt="Before Therapy" class="before-after-image">
-                            <img src="https://via.placeholder.com/300x200?text=After" alt="After Therapy" class="before-after-image">
+                            <img src="../assets/images/before-therapy.jpg" alt="Before Therapy" class="before-after-image">
+                            <img src="../assets/images/after-therapy.jpg" alt="After Therapy" class="before-after-image">
                         </div>
                         <p>See how therapy can make a difference in your life. Our clients have experienced significant growth and healing through our services.</p>
                     </div>

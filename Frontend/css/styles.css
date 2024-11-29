@@ -954,7 +954,7 @@ p {
 
 .hero-section .hero-image {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     height: auto;
     margin: 20px 0;
 }
@@ -1021,8 +1021,9 @@ p {
 }
 
 .story-image {
-    width: 300px; /* Fixed width for storytelling images */
-    height: auto; /* Maintain aspect ratio */
+    width: 350px; /* Fixed width for storytelling images */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 /* Before and After Section Styles */
@@ -1044,6 +1045,7 @@ p {
 }
 
 .before-after-image {
-    width: 300px; /* Fixed width for before and after images */
-    height: auto; /* Maintain aspect ratio */
+    width: 450px; /* Fixed width for before and after images */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
 }
