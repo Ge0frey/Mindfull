@@ -40,7 +40,7 @@ const app = {
                     <div class="hero-section">
                         <h1>Welcome to Mindfull - Your Path to Wellness</h1>
                         <p class="hero-subtitle">Connecting you with expert therapists for your mental health journey.</p>
-                        <img src="https://via.placeholder.com/800x400?text=Peaceful+Landscape" alt="Peaceful Landscape" class="hero-image">
+                        <img src="https://www.freepik.com/free-ai-image/medium-shot-beautiful-woman-with-braids_180894059.htm#fromView=search&page=1&position=22&uuid=4ed9dc91-5c0c-4074-b9cd-ca3024a05b3f" alt="Peaceful Landscape" class="hero-image">
                         <div class="hero-buttons">
                             <a href="#therapists" class="btn btn-primary">Find a Therapist</a>
                             ${!user ? `
