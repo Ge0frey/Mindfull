@@ -1,7 +1,5 @@
 const BASE_URL = '/api';
 
-const url = "https://mindfull-hn00qamwk-geofrey-s-projects.vercel.app"
-
 export const api = {
     async request(url, method = 'GET', data = null) {
         const options = {
