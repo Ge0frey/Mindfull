@@ -13,7 +13,11 @@ const appoinmentsRoutes = require('./routes/appointmentRoutes');
 const therapistsRoutes = require('./routes/therapistRoutes');
 
 //middleware 
-app.use(cors());
+app.use(cors({
+    origin: ["https://mindfull-psychotherapy.vercel.app"],
+    methods:["POST", "GET"],
+    credentials:true
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session(sessionConfig));
